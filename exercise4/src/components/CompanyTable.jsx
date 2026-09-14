@@ -13,7 +13,7 @@ const CompanyTable = () => {
     { name: "Company Nine", category: "Retail", start: 1981, end: 1989 }
   ];
 
-  // Lọc category "Retail", tăng start thêm 1
+  
   const retailCompanies = companies
     .filter(comp => comp.category === "Retail")
     .map(comp => ({ ...comp, start: comp.start + 1 }));
