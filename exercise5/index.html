@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 5 - Bootstrap</title>
+
+    <!-- ĐƯỜNG DẪN CỤC BỘ TRỎ VÀO BOOTSTRAP VỪA CÀI XONG -->
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+
+    <style>
+      .grid-box {
+        background-color: #d1d5db;
+        border: 1px solid #9ca3af;
+        padding: 12px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body class="p-4">
+    <h1 class="fw-bold mb-3">Let's test the grid!</h1>
+
+    <div class="row g-0 mb-1">
+      <div class="col-6 grid-box">First col</div>
+      <div class="col-6 grid-box">Second col</div>
+    </div>
+
+    <div class="row g-0 mb-1">
+      <div class="col-4 grid-box">col</div>
+      <div class="col-4 grid-box">col</div>
+      <div class="col-4 grid-box">col</div>
+    </div>
+
+    <div class="row g-0">
+      <div class="col-3 grid-box">col</div>
+      <div class="col-3 grid-box">col</div>
+      <div class="col-3 grid-box">col</div>
+      <div class="col-3 grid-box">col</div>
+    </div>
+
+    <div
+      class="p-3 mt-2 text-center fw-bold fs-2"
+      style="background-color: #d8c4c4"
+    >
+      Nguyen Khanh!
+    </div>
+
+    <div class="text-center my-5">
+      <h2 class="fw-bold mb-4">My First Bootstrap Page</h2>
+      <div class="row justify-content-center align-items-center">
+        <div class="col-3">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+            class="img-fluid"
+            style="height: 150px"
+          />
+        </div>
+        <div class="col-3">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+            class="img-fluid"
+            style="height: 150px"
+          />
+        </div>
+        <div class="col-3">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+            class="img-fluid"
+            style="height: 150px"
+          />
+        </div>
+      </div>
+    </div>
+
+    <h2 class="text-center fw-bold my-4">Students Detail</h2>
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div class="card p-3">
+          <img
+            src="https://i.pinimg.com/474x/6c/2e/07/6c2e07660c6fcf90d6a362ced622e1ad.jpg"
+            class="card-img-top"
+            alt="Avatar"
+          />
+          <div class="card-body text-center">
+            <h5 class="fw-bold">HE234567</h5>
+            <div class="d-flex justify-content-between mb-3">
+              <span>Cheems lỏ</span>
+              <span class="text-muted">Ha Noi</span>
+            </div>
+
+            <div class="mb-3">
+              <input type="radio" name="check1" id="a1" />
+              <label for="a1" class="me-3">Absent</label>
+              <input type="radio" name="check1" id="p1" checked />
+              <label for="p1">Present</label>
+            </div>
+            <button class="btn btn-warning text-white fw-bold px-4">
+              Submit
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card p-3">
+          <img
+            src="https://i.pinimg.com/236x/98/87/22/988722dd5b531362ee425c9f6ef8c021.jpg"
+            class="card-img-top"
+            alt="Avatar"
+          />
+          <div class="card-body text-center">
+            <h5 class="fw-bold">HE123456</h5>
+            <div class="d-flex justify-content-between mb-3">
+              <span>Mồn lèo</span>
+              <span class="text-muted">Thanh Hoa</span>
+            </div>
+            <div class="mb-3">
+              <input type="radio" name="check2" id="a2" />
+              <label for="a2" class="me-3">Absent</label>
+              <input type="radio" name="check2" id="p2" checked />
+              <label for="p2">Present</label>
+            </div>
+            <button class="btn btn-warning text-white fw-bold px-4">
+              Submit
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
