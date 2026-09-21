@@ -1,17 +1,18 @@
-import React from 'react';
-import { Container } from 'react-bootstrap';
+import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="bg-dark text-white py-4 mt-5 border-top border-secondary">
-      <Container className="text-center">
-        <h5 className="fw-bold text-warning mb-2">SHOP FASHION</h5>
-        <p className="text-secondary small mb-2">Mang đến phong cách thời trang dẫn đầu xu hướng 2026.</p>
-        <div className="text-secondary small">
-          &copy; 2026 Shop Fashion. All rights reserved.
+    <div>
+      <footer>
+        <div className="footer">
+          <h6 className="fw-bold text-dark"> </h6>
+          <p className="mb-1"> Student Name: Nguyễn Văn Khánh</p>
+          <p className="mb-1">Student ID: HE200567</p>
+          <p className="mb-1">Class: SE2058</p>
+          <p className="mb-0">Email: bongocat204@gmail.com</p>
         </div>
-      </Container>
-    </footer>
+      </footer>
+    </div>
   );
 };
 
