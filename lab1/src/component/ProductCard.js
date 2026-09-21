@@ -1,46 +1,29 @@
 import React from 'react';
-import { Card, Button, Badge } from 'react-bootstrap';
+import { Navbar, Nav, Container } from 'react-bootstrap';
 
-const ProductCard = ({ product, onAddToCart }) => {
-  const getBadgeVariant = (status) => {
-    if (status === 'Sale') return 'danger';
-    if (status === 'Hot') return 'warning';
-    return 'success';
-  };
-
+const Header = ({ cartCount }) => {
   return (
-    <Card className="h-100 shadow-sm border-0 position-relative rounded-3 overflow-hidden">
-      {/* Badge Status */}
-      <Badge 
-        bg={getBadgeVariant(product.status)} 
-        className="position-absolute top-0 start-0 m-2 px-2 py-1 fs-6"
-      >
-        {product.status}
-      </Badge>
+    <Navbar bg="dark" variant="dark" expand="lg" sticky="top" className="shadow-sm">
+      <Container>
+        <Navbar.Brand href="#home" className="fw-bold fs-3 text-warning">
+          SHOP FASHION
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="ms-auto align-items-center gap-2">
+            <Nav.Link href="#home" className="text-white">Home</Nav.Link>
+            <Nav.Link href="#products" className="text-white">Products</Nav.Link>
+            <Nav.Link href="#men" className="text-white">Men</Nav.Link>
+            <Nav.Link href="#women" className="text-white">Women</Nav.Link>
+            <Nav.Link href="#contact" className="text-white">Contact</Nav.Link>
+            <Nav.Link href="#cart" className="text-white">Card</Nav.Link>
+     
 
-      {}
-      <Card.Img 
-        variant="top" 
-        src={product.image} 
-        alt={product.name} 
-        style={{ height: '240px', objectFit: 'cover' }}
-      />
-
-      <Card.Body className="d-flex flex-column text-center p-3">
-        <Card.Title className="fs-6 fw-bold mb-2">{product.name}</Card.Title>
-        <Card.Text className="text-danger fw-bold fs-5 mb-3">
-          {product.price.toLocaleString('vi-VN')} đ
-        </Card.Text>
-        <Button 
-          variant="dark" 
-          className="w-100 mt-auto fw-semibold"
-          onClick={() => onAddToCart(product)}
-        >
-          <i className="bi bi-cart-plus me-2"></i>Thêm vào giỏ
-        </Button>
-      </Card.Body>
-    </Card>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 };
 
-export default ProductCard;
+export default Header;
